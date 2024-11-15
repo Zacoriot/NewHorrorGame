@@ -65,9 +65,9 @@
 			"Name": "Floor",
 			"Transform": {
 				"Scale": {
-					"X": 4.0,
+					"X": 25.0,
 					"Y": 0.5,
-					"Z": 4.0
+					"Z": 25.0
 				}
 			},
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
@@ -81,6 +81,12 @@
 					}
 				]
 			}
+		},
+		{
+			"ID": "a6bf96054990d69280fb46b25f153ba5",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "1e64e8d6419c88b60ee56bb6327ba083",
+			"Name": "BoxCollider"
 		},
 		{
 			"ID": "6ed581944115a65efd857fa27966d61c",
@@ -100,6 +106,69 @@
 			"TypeName": "FlaxEngine.AudioListener",
 			"ParentID": "6ed581944115a65efd857fa27966d61c",
 			"Name": "Audio Listener"
+		},
+		{
+			"ID": "255a20a24b0ec269b1ddf280d7d0f4d2",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "4f9a76be456d09e1040090b6277b2916",
+			"Name": "Player",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 74.53209686279297,
+					"Z": 0.0
+				}
+			},
+			"Radius": 25.0,
+			"Height": 50.0
+		},
+		{
+			"ID": "64b70ddb41ea60efe8f662830fc31a53",
+			"TypeName": "Game.PlayerMovementController",
+			"ParentID": "255a20a24b0ec269b1ddf280d7d0f4d2",
+			"V": {}
+		},
+		{
+			"ID": "15aee634489c8a7656aabeae9ab64152",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "255a20a24b0ec269b1ddf280d7d0f4d2",
+			"Name": "StaticModel",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -50.0,
+					"Z": 0.0
+				}
+			},
+			"Model": "3f82e57744f57c28285150b646ad2198",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "1d79be1f400b4dd38c3ead90a2ca8c5d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4f9a76be456d09e1040090b6277b2916",
+			"Name": "Managers"
+		},
+		{
+			"ID": "6d41491b4dcd391d5e47d792ba579cab",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1d79be1f400b4dd38c3ead90a2ca8c5d",
+			"Name": "InputManager"
+		},
+		{
+			"ID": "0be32a8b4ff04c8132cba986e8ccb2a4",
+			"TypeName": "Game.InputManager",
+			"ParentID": "6d41491b4dcd391d5e47d792ba579cab",
+			"V": {}
 		}
 	]
 }
