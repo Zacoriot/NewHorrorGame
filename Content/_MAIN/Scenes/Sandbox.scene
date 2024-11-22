@@ -96,8 +96,14 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 150.0,
-					"Z": -300.0
+					"Y": 806.5321044921875,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.7193397879600525,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.6946583986282349
 				}
 			}
 		},
@@ -126,7 +132,9 @@
 			"ID": "64b70ddb41ea60efe8f662830fc31a53",
 			"TypeName": "Game.PlayerMovementController",
 			"ParentID": "255a20a24b0ec269b1ddf280d7d0f4d2",
-			"V": {}
+			"V": {
+	"_MovementSpeed": 2.0
+}
 		},
 		{
 			"ID": "15aee634489c8a7656aabeae9ab64152",
