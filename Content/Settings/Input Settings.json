@@ -3,7 +3,16 @@
 	"TypeName": "FlaxEditor.Content.Settings.InputSettings",
 	"EngineBuild": 6605,
 	"Data": {
-	"ActionMappings": [],
+	"ActionMappings": [
+		{
+			"Name": "Jump",
+			"Mode": 1,
+			"Key": 32,
+			"MouseButton": 0,
+			"GamepadButton": 0,
+			"Gamepad": 0
+		}
+	],
 	"AxisMappings": [
 		{
 			"Name": "Mouse X",

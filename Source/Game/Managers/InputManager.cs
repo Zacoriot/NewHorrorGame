@@ -13,7 +13,8 @@ public class InputManager : Script
     static InputAxis _MouseX;
     static InputAxis _MouseY;
 
-    // INPUT ACTIONS
+    // INPUT EVENT
+    static InputEvent _Jump;
 
     public override void OnAwake()
     {
@@ -23,7 +24,8 @@ public class InputManager : Script
         _MouseX = new InputAxis("Mouse X");
         _MouseY = new InputAxis("Mouse Y");
 
-        // INPUT ACTIONS
+        // INPUT EVENT
+        _Jump = new InputEvent("Jump");
     }
 
     public override void OnDestroy()
@@ -34,7 +36,8 @@ public class InputManager : Script
         _MouseX.Dispose();
         _MouseY.Dispose();
 
-        // INPUT ACTIONS
+        // INPUT EVENT
+        _Jump.Dispose();
     }
 
     // GETTERS
@@ -47,4 +50,6 @@ public class InputManager : Script
     {
         return new Vector2(_MouseX.ValueRaw, _MouseY.ValueRaw);
     }
+
+    public static InputEvent GetJump() => _Jump;
 }

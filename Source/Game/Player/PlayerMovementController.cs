@@ -7,12 +7,21 @@ namespace Game;
 /// </summary>
 public class PlayerMovementController : Script
 {
-    [Header("==MOVEMENT==")]
     CharacterController _CharacterController;
+
+    [Header("==MOVEMENT==")]
     [ShowInEditor, Serialize] float _MovementSpeed;
-    float _FallingSpeed;
+    Vector3 _FallingMovement;
+
+    [Header("==JUMP==")]
+    [ShowInEditor, Serialize] float _JumpHeight;
 
     float _Gravity;
+
+    public override void OnEnable()
+    {
+        InputManager.GetJump().Pressed += Jump;
+    }
 
     public override void OnStart()
     {
@@ -30,7 +39,7 @@ public class PlayerMovementController : Script
     {
         if(!_CharacterController.IsGrounded)
         {
-            _FallingSpeed += _Gravity * Time.DeltaTime;
+            _FallingMovement.Y += _Gravity * Time.DeltaTime;
         }
 
         Vector3 moveInput = Actor.Transform.Forward * InputManager.GetMovementAxis().Y +
@@ -38,8 +47,23 @@ public class PlayerMovementController : Script
 
         moveInput = moveInput.Normalized * _MovementSpeed;
 
-        Vector3 finalMovement = moveInput + new Vector3(0, _FallingSpeed, 0);
+        Vector3 finalMovement = moveInput + _FallingMovement;
 
         _CharacterController.Move(finalMovement * Time.DeltaTime);
+    }
+
+    private void Jump()
+    {
+        if(!_CharacterController.IsGrounded)
+        {
+            return;
+        }
+
+        _FallingMovement.Y = Mathf.Sqrt(_JumpHeight * -2 * _Gravity);
+    }
+
+    public override void OnDisable()
+    {
+        InputManager.GetJump().Pressed -= Jump;
     }
 }
