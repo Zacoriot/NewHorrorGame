@@ -138,7 +138,8 @@
 			"TypeName": "Game.PlayerMovementController",
 			"ParentID": "255a20a24b0ec269b1ddf280d7d0f4d2",
 			"V": {
-	"_MovementSpeed": 100.0
+	"_MovementSpeed": 100.0,
+	"_JumpHeight": 50.0
 }
 		},
 		{

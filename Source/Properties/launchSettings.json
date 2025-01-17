@@ -2,9 +2,9 @@
   "profiles": {
     "Game": {
       "commandName": "Executable",
-      "workingDirectory": "C:/Users/Isaac/Desktop/Class Repos/NewHorrorGame",
-      "executablePath": "C:/Program Files (x86)/Flax/Flax_1.9/Binaries/Editor/Win64/Development/FlaxEditor.exe",
-      "commandLineArgs": "-project \"C:/Users/Isaac/Desktop/Class Repos/NewHorrorGame\"",
+      "workingDirectory": "C:/Users/isaac/Desktop/Class Projects/NewHorrorGame",
+      "executablePath": "C:/_GAME DEV/FLAX/Flax_1.9/Binaries/Editor/Win64/Development/FlaxEditor.exe",
+      "commandLineArgs": "-project \"C:/Users/isaac/Desktop/Class Projects/NewHorrorGame\"",
       "nativeDebugging": false
     }
   }
