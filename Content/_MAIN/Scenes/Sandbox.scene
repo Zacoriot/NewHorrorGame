@@ -146,6 +146,18 @@
 }
 		},
 		{
+			"ID": "cc71b10c4fadd1552e82ed82876bea98",
+			"TypeName": "Game.InteractionController",
+			"ParentID": "255a20a24b0ec269b1ddf280d7d0f4d2",
+			"V": {
+	"_InteractLayer": {
+		"Mask": 4
+	},
+	"_Camera": "6ed581944115a65efd857fa27966d61c",
+	"_Reach": 150.0
+}
+		},
+		{
 			"ID": "15aee634489c8a7656aabeae9ab64152",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "255a20a24b0ec269b1ddf280d7d0f4d2",
@@ -258,6 +270,82 @@
 					}
 				]
 			}
+		},
+		{
+			"ID": "57e0972f46947cf469494d800e36f97f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "4f9a76be456d09e1040090b6277b2916",
+			"Name": "INTERACTABLE",
+			"Transform": {
+				"Translation": {
+					"X": 140.0,
+					"Y": 79.84671020507813,
+					"Z": -152.18202209472657
+				}
+			},
+			"Layer": 2,
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "4482971242b6ee8e382a2895afa7d07c",
+			"TypeName": "Game.MagicDisapearingBox",
+			"ParentID": "57e0972f46947cf469494d800e36f97f",
+			"V": {}
+		},
+		{
+			"ID": "d536b1ef4d0e05630db3aa90983eafad",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "57e0972f46947cf469494d800e36f97f",
+			"Name": "BoxCollider",
+			"Layer": 2
+		},
+		{
+			"ID": "91c04a494a51c816963e448cda59a6f5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "4f9a76be456d09e1040090b6277b2916",
+			"Name": "INTERACTABLE 0",
+			"Transform": {
+				"Translation": {
+					"X": 250.0,
+					"Y": 79.84671020507813,
+					"Z": -152.18202209472657
+				}
+			},
+			"Layer": 2,
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "1dbbfc65454476224950f39cd07f3db1",
+			"TypeName": "Game.Interactable",
+			"ParentID": "91c04a494a51c816963e448cda59a6f5",
+			"V": {}
+		},
+		{
+			"ID": "b996796646d23682102fcaba6ace528c",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "91c04a494a51c816963e448cda59a6f5",
+			"Name": "BoxCollider",
+			"Layer": 2
 		}
 	]
 }
