@@ -16,6 +16,7 @@ public class InputManager : Script
     // INPUT EVENT
     static InputEvent _Jump;
     static InputEvent _Sprint;
+    static InputEvent _Interact;
 
     public override void OnAwake()
     {
@@ -28,6 +29,7 @@ public class InputManager : Script
         // INPUT EVENT
         _Jump = new InputEvent("Jump");
         _Sprint = new InputEvent("Sprint");
+        _Interact = new InputEvent("Interact");
     }
 
     public override void OnDestroy()
@@ -41,6 +43,7 @@ public class InputManager : Script
         // INPUT EVENT
         _Jump.Dispose();
         _Sprint.Dispose();
+        _Interact.Dispose();
     }
 
     // GETTERS
@@ -57,4 +60,6 @@ public class InputManager : Script
     public static InputEvent GetJump() => _Jump;
 
     public static InputEvent GetSprint() => _Sprint;
+
+    public static InputEvent GetInteract() => _Interact;
 }

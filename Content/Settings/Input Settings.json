@@ -19,6 +19,14 @@
 			"MouseButton": 0,
 			"GamepadButton": 0,
 			"Gamepad": 0
+		},
+		{
+			"Name": "Interact",
+			"Mode": 1,
+			"Key": 69,
+			"MouseButton": 0,
+			"GamepadButton": 0,
+			"Gamepad": 0
 		}
 	],
 	"AxisMappings": [
